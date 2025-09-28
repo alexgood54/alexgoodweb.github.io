@@ -1,0 +1,91 @@
+body {
+            background-color: rgb(117, 0, 0);
+            margin: 1;
+            padding: 1;
+        }
+
+        .redsection {
+            background-color: rgb(117, 0, 0);
+            color: white;
+            font-family: sans-serif;
+            
+        }
+
+        .header {
+            background-color: brown;
+            color: black;
+            font-family: fantasy;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            gap: 400px; /* Spazio tra immagini e testo */
+        }
+
+        .header img {
+            height: 80px; /* Regola la dimensione delle icone */
+        }
+
+        .header p {
+            font-size: 5em;
+            margin: 0;
+        }
+
+        .immagine_postazione {
+            display: flex;
+            align-items: flex-start;
+            background-color: brown;
+            padding: 50px;
+            margin: 50px;
+            color: white;
+            font-family: sans-serif;
+            gap: 20px; /* Spazio tra immagine e testo */
+            animation: fadeIn 2s ease-in-out;
+            animation-delay: 50ms;
+            animation-fill-mode: forwards;
+        }
+
+        .sottotitolo {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 700px) {
+    .immagine_postazione {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 10px;
+        gap: 10px;
+    }
+    .immagine_postazione img {
+        width: 90vw;
+        max-width: 350px;
+        margin: 10px 0;
+    }
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .header p {
+        font-size: 2em;
+    }
+    .sottotitolo {
+        font-size: 1.5em;
+    }
+}
