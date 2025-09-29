@@ -1,0 +1,183 @@
+body {
+            background-color: rgb(117, 0, 0);
+            margin: 1;
+            padding: 1;
+        }
+
+        .redsection {
+            background-color: rgb(117, 0, 0);
+            color: white;
+            font-family: sans-serif;
+            
+        }
+
+        .header {
+            background-color: brown;
+            color: black;
+            font-family: fantasy;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            gap: 400px; /* Spazio tra immagini e testo */
+        }
+
+        .header img {
+            height: 80px; /* Regola la dimensione delle icone */
+        }
+
+        .header p {
+            font-size: 5em;
+            margin: 0;
+        }
+
+        .immagine_postazione {
+            display: flex;
+            align-items: flex-start;
+            background-color: brown;
+            padding: 50px;
+            margin: 50px;
+            color: white;
+            font-family: sans-serif;
+            gap: 20px; /* Spazio tra immagine e testo */
+            animation: fadeIn 2s ease-in-out;
+            animation-delay: 50ms;
+            animation-fill-mode: forwards;
+        }
+
+        .sottotitolo {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 700px) {
+    .immagine_postazione {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 10px !important;
+        margin: 10px !important;
+        gap: 10px !important;
+    }
+    .immagine_postazione img {
+        width: 95vw !important;
+        max-width: 350px !important;
+        margin: 10px 0 !important;
+    }
+    .header {
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 10px !important;
+    }
+    .header p {
+        font-size: 2em !important;
+    }
+    .sottotitolo {
+        font-size: 1.2em !important;
+        padding: 10px !important;
+    }
+    .gradient-section {
+        height: 40vh !important;
+        font-size: 1.5em !important;
+        padding: 10px !important;
+    }
+}
+
+.gradient-section {
+    height: 100vh; /* Altezza intera schermata */
+    display: flex;
+    background: linear-gradient(to bottom, rgb(117, 0, 0), yellow);
+}
+
+/* Banner laterale fisso a destra */
+.sidebar-banner {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+    background: rgba(117,0,0,0.7);
+    border-radius: 15px;
+    padding: 10px 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.sidebar-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.sidebar-icon:hover {
+    transform: scale(1.15);
+}
+
+.offerte-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.offerta-sinistra {
+    background: rgb(117,0,0);
+    color: white;
+    border-radius: 40px;
+    padding: 30px;
+    width: 40vw;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.offerta-destra {
+    background: brown;
+    color: white;
+    border-radius: 40px;
+    padding: 30px;
+    width: 40vw;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Responsive per telefono */
+@media (max-width: 900px) {
+    .offerte-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .offerta-sinistra, .offerta-destra {
+        width: 90vw;
+        min-width: unset;
+        align-items: center;
+        text-align: center;
+    }
+}
