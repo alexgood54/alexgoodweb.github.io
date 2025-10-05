@@ -152,6 +152,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    animation: fadeIn 5s ease-in-out;
+    animation-delay: 50ms;
+    animation-fill-mode: forwards;
 }
 
 .offerta-destra {
@@ -165,6 +168,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    animation: fadeIn 5s ease-in-out;
+    animation-delay: 50ms;
+    animation-fill-mode: forwards;
 }
 
 /* Responsive per telefono */
