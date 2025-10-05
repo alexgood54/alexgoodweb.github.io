@@ -173,6 +173,30 @@ body {
     animation-fill-mode: forwards;
 }
 
+.titolo-offerta {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.testo-offerta {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.avviso-offerta {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    color: #fff700;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
 /* Responsive per telefono */
 @media (max-width: 900px) {
     .offerte-section {
