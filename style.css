@@ -68,31 +68,57 @@ body {
     .immagine_postazione {
         flex-direction: column !important;
         align-items: center !important;
-        padding: 10px !important;
-        margin: 10px !important;
-        gap: 10px !important;
+        padding: 5px !important;
+        margin: 5px !important;
+        gap: 5px !important;
     }
     .immagine_postazione img {
-        width: 95vw !important;
-        max-width: 350px !important;
-        margin: 10px 0 !important;
+        width: 90vw !important;
+        max-width: 220px !important;
+        margin: 5px 0 !important;
     }
     .header {
         flex-direction: column !important;
-        gap: 20px !important;
-        padding: 10px !important;
+        gap: 10px !important;
+        padding: 5px !important;
+    }
+    .header img {
+        height: 40px !important;
     }
     .header p {
-        font-size: 2em !important;
+        font-size: 1.2em !important;
     }
     .sottotitolo {
-        font-size: 1.2em !important;
-        padding: 10px !important;
+        font-size: 0.9em !important;
+        padding: 5px !important;
     }
     .gradient-section {
-        height: 40vh !important;
-        font-size: 1.5em !important;
-        padding: 10px !important;
+        height: 30vh !important;
+        font-size: 1em !important;
+        padding: 5px !important;
+    }
+    .offerta-sinistra, .offerta-destra {
+        font-size: 0.9em !important;
+        padding: 8px !important;
+    }
+    .titolo-offerta {
+        font-size: 1em !important;
+    }
+    .testo-offerta {
+        font-size: 0.9em !important;
+    }
+    .avviso-offerta {
+        font-size: 0.8em !important;
+        padding: 6px !important;
+    }
+    .sidebar-banner {
+        right: 2px;
+        bottom: 10px;
+        padding: 2px 2px;
+    }
+    .sidebar-icon {
+        width: 30px;
+        height: 30px;
     }
 }
 
