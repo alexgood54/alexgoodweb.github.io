@@ -97,9 +97,9 @@ body {
 }
 
 .gradient-section {
-    height: 100vh; /* Altezza intera schermata */
+    height: 80vh; /* Altezza intera schermata */
     display: flex;
-    background: linear-gradient(to bottom, rgb(117, 0, 0), yellow);
+    background: linear-gradient(to bottom, rgb(117, 0, 0), rgb(231, 159, 4));
 }
 
 /* Banner laterale fisso a destra */
@@ -232,12 +232,9 @@ body {
         width: 40px;
         height: 40px;
     }
-            @media (max-width: 900px) {
     .gradient-section {
         display: block !important;
         height: auto !important;
         padding: 0 !important;
     }
 }
-}
-
